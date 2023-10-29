@@ -1,5 +1,7 @@
 ### Hi there 👋
 
+My name is Jannik and I work currently at Thalia as a Frontend Developer.
+
 <!--
 **jannikh93/jannikh93** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
