@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    font-family: "Inter Tight", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+}
+
+header {
+    position: absolute;
+    width: 100%;
+    top: 0;
+}
+
+.header-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px 30px 0 30px;
+}
+
+.nav-links a:last-child {
+    padding-left: 15px;
+}
+
+h1 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 300;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    
+    background-color: #F5F5F5;
+}
+
+.hero-section {
+    margin-left: 30px;
+    margin-top: 10rem;
+}
+
+
+
+
+
