@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url(./normalize.css);
 * {
     margin: 0;
     padding: 0;
@@ -32,30 +32,45 @@ header {
 }
 
 h1 {
-    font-size: 28px;
+    font-size: 32px;
+    line-height: 36px;
     font-weight: 500;
 }
 
+h2 {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
 p {
+    font-size: 20px;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+a{
     font-size: 18px;
-    font-weight: 300;
+    line-height: 36px;
+    text-decoration-line: underline;
+    text-underline-offset: 4px;
+}
+
+.home-tag {
+    font-size: 18px;
+    line-height: 36px;
 }
 
 main {
     height: 100vh;
     display: flex;
-    
-    /* background-color: #F5F5F5; */
 }
 
 .hero-section {
-    
     margin-left: 30px;
-    margin-top: 10rem;
-    
+    margin-top: 10rem;    
 }
 
-/* Hero video styling */
 .hero-video {
     position: absolute;
     top: 50%;
@@ -67,16 +82,76 @@ main {
     z-index: -1;
 }
 
-/* Hero overlay styling */
 .hero-overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.5); /* Semi-transparent overlay */
-    backdrop-filter: blur(30px); /* Blur effect */
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(30px);
     z-index: -1;
+}
+
+.greeting-container {
+    position: absolute;
+    top: 20%;
+    left: 30px;
+}
+
+.current-position {
+    margin-bottom: 20px;
+}
+
+.list-positions {
+    padding-left: 22px;
+}
+
+.list-positions li{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    list-style: none;
+    color: #7D7D7D;
+    
+}
+
+.list-positions li:last-child {
+    margin-top: 10px;
+    color: #ACACAC;
+}
+
+.more-cta {
+    position: absolute;
+    bottom: 10%;
+    margin: auto 0;
+}
+
+.more-cta span {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 36px;
+    color: #7d7d7d;
+}
+
+/* Media query for tablets (min-width: 600px) */
+@media (min-width: 600px) {
+
+    h1 {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .greeting-container {
+        position: absolute;
+        top: 20%;
+        left: 20%;
+    }
+}
+
+/* Media query for desktops (min-width: 1024px) */
+@media (min-width: 1024px) {
+
 }
 
 

@@ -1,0 +1,31 @@
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Ensure the pointer cursor is used for links */
+a {
+    cursor: pointer;
+}
+
+/* Provide a consistent outline for keyboard accessibility */
+a:focus {
+    outline: 2px solid blue; /* Adjust color as needed */
+    outline-offset: 2px;
+}
+
+/* Style visited links with a subtle color change */
+a:visited {
+    color: darken(currentColor, 10%); /* Adjust color as needed */
+}
+
+/* Style hover state */
+a:hover {
+    text-decoration: underline;
+    color: lighten(currentColor, 10%); /* Adjust color as needed */
+}
+
+/* Style active state */
+a:active {
+    color: darken(currentColor, 10%); /* Adjust color as needed */
+}
