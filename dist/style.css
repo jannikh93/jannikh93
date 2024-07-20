@@ -45,12 +45,38 @@ main {
     height: 100vh;
     display: flex;
     
-    background-color: #F5F5F5;
+    /* background-color: #F5F5F5; */
 }
 
 .hero-section {
+    
     margin-left: 30px;
     margin-top: 10rem;
+    
+}
+
+/* Hero video styling */
+.hero-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+/* Hero overlay styling */
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent overlay */
+    backdrop-filter: blur(30px); /* Blur effect */
+    z-index: -1;
 }
 
 
